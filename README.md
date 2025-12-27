@@ -159,6 +159,30 @@ JWT token is self-generated.
 
 Role is stored in database.
 
+🗄 Database Setup
+
+The database schema and sample data are provided in the following file:
+
+social_media_db.sql
+
+Steps to import database:
+
+Create database in MySQL:
+
+CREATE DATABASE social_media_db;
+
+
+Import SQL file:
+
+mysql -u root -p social_media_db < social_media_db.sql
+
+
+Update application.properties:
+
+spring.datasource.url=jdbc:mysql://localhost:3306/social_media_db
+spring.datasource.username=root
+spring.datasource.password=your_password
+
 👨‍💻 Author
 
 Shubham Nehete
